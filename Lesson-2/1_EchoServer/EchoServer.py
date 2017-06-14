@@ -28,7 +28,7 @@ class EchoHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain; charset=utf-8')
         self.end_headers()
 
-        # Now, write the response body.
+        # Now, write the response body.p
         self.wfile.write(self.path.encode()[1:])
 
 if __name__ == '__main__':
